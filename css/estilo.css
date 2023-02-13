@@ -1,0 +1,273 @@
+* {
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: 'Roboto', sans-serif;
+    color: rgb(54, 18, 18);
+    box-sizing: border-box;
+}
+body {
+    background-color: #647c68;
+}
+header {
+    background-color: rgb(15, 105, 3);
+    border-radius: 20px;
+    padding: 12px;
+    text-align: right;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 2px;
+}
+#header_texto {
+    color: rgb(180, 207, 152);
+    float: left;
+}
+#header_foto {
+    border-radius: 30px;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background: rgb(88, 139, 109);
+    margin-top: 2px;
+    border-radius: 20px;
+}
+
+.fa-graduation-cap {
+    color: rgb(0, 70, 0);
+}
+.fa-briefcase {
+    color: rgb(0, 70, 0);
+}
+.fa-person-digging {
+    color: rgb(0, 70, 0);
+}
+.fa-caret-down {
+    color: rgb(0, 70, 0);
+}
+.fa-caret-up {
+    color: rgb(0, 70, 0);
+}
+.fa-address-card {
+    color: rgb(62, 100, 62);
+}
+.fa-envelope {
+    color: rgb(62, 100, 62);
+}
+.fa-calendar-days {
+    color: rgb(62, 100, 62);
+}
+.fa-passport {
+    color: rgb(62, 100, 62);
+}
+.fa-phone {
+    color: rgb(62, 100, 62);
+}
+.fa-mobile {
+    color: rgb(62, 100, 62);
+}
+
+/* limpiar seteos despues de usar header, row */
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.col_izquierda {   
+    float: left;
+    width: 25%;
+    background-color: #529741;
+    border-radius: 20px;
+    margin-right: 0px;
+}
+.col_derecha {
+    float: left;
+    width: 75%;
+    background-color: #407549;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+img {
+    opacity: 0.9;
+}
+img:hover {
+    opacity: 1.0;
+}
+
+/*nav menu*/
+nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 1px;
+}
+nav ul li {
+    margin-inline: 10px;
+    font-size: 20px;
+    color: #a0a79f;
+    /*padding-left: 3px;*/
+}
+nav a {
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
+    color: #a0a79f;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(132, 182, 136);
+    color: rgb(2, 63, 39);
+  }
+
+
+/* diseño Responsive, pantalla menos de 1200px: columnas izq y der cambian % de ancho */
+@media screen and (max-width: 1200px) {
+    .col_izquierda {   
+        width: 35%;
+        padding: 0;
+        margin-right: 0px;
+    }
+    .col_derecha {   
+        width: 65%;
+        padding: 0;
+        margin-right: 0px;
+    }
+    header {
+        padding: 7px;
+        font-size: 25px;
+    }
+}
+/* diseño Responsive, pantalla menos de 900px: columnas izq y der quedan una sobre la otra */
+@media screen and (max-width: 900px) {
+    .col_izquierda, .col_derecha {   
+        width: 100%;
+        padding: 0;
+        margin-right: 0px;
+    }
+    header {
+        padding: 3px;
+        font-size: 15px;
+    }
+}
+/* diseño Responsive, pantalla menos de 700px: cambia nav uno debajo del otro */
+@media screen and (max-width: 700px) {
+    nav ul {
+        display: block;
+        list-style-type: none;
+        padding: 1px;
+    }
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table td, table th {
+    border: 0px solid #ddd;
+    padding: 8px;
+}
+table th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    background-color: #048153;
+    color: #a0a79f;
+}
+
+p {
+    color:rgb(20, 75, 36);
+}
+h1 {
+    text-align: center;
+    color: rgb(7, 73, 62);
+}
+section {
+    padding: 10px;
+    border: 3px solid rgb(61, 138, 61);
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgb(180, 207, 152);
+}
+section ul li {
+    font-size: 17px;
+    color:rgb(20, 75, 36);
+}
+.clase_bold {
+    font-weight: bold;
+}
+
+/*clases para tooltips*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(2, 54, 25);
+    margin-bottom: 15px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(28, 97, 65);
+    color: rgb(150, 226, 169);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(28, 97, 65) transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+
+#div_estudios {
+    position: relative;
+}
+#div_experiencia {
+    position: relative;
+}
+#div_habilidades {
+    position: relative;
+}
+#tit_estudios {
+    position: absolute;
+}
+#tit_experiencia {
+    position: absolute;
+}
+#tit_habilidades {
+    position: absolute;
+}
+
+
+#div_mas_info {
+    margin-left: auto;
+    display: block;
+}
+.no_mostrar {
+    display: none;
+}
+.mostrar {
+    display: block;
+}

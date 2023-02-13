@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="images/fav_icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4965ecb4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 id="header_texto">Marco Ferrer - Licenciado en Informática</h2>
+        <img id="header_foto" src="images/foto_perfil_128.jpg" alt="Foto de perfil de Marco Ferrer">
+    </header>
+    
+    <div class="row">
+        <div class="col_izquierda">
+            <section>
+                <p>Hola, mi nombre es Marco Ferrer.</p>
+                <p>Soy un profesional del área Informática (Analista Programador, Licenciado en Informática).</p>
+                <p>Aquí les informo mis datos personales, estudios cursados, experiencia profesional y habilidades e intereses en general.</p>
+                <p>Estoy buscando un cambio en mi carrera profesional, 
+                   esperando poder utilizar la experiencia adquirida y mis conocimientos 
+                   para formar parte de un grupo de trabajo dinámico en la búsqueda de nuevos desafíos.</p>
+                <div id="div_mas_info" class="tooltip" style="text-align: right;"><i id="mas_info" class="fa-solid fa-caret-down" style="text-align: right;"></i><span class="tooltiptext">Informacion Adicional</span></div> 
+                <!-- <i id="mas_info" class="fa-solid fa-caret-down" style="text-align: right;"></i>  -->
+                <p id="info_adic" class="no_mostrar">Dentro del área de Informática, actualmente me encuentro desarrollando tareas de Programador.<br>
+                    Los proyectos de los cuales formo parte incluyen desarrollo de aplicaciones de escritorio 
+                    (utilizando lenguaje de programación Visual Basic .NET) y aplicaciones Web, 
+                    interviniendo tanto en el backend (lenguaje de programación php, framework Laravell) como en el frontend (Html, CSS, Angular)
+                </p>
+            </section>
+            <section>
+                <article>
+                    <h1>Datos Personales</h1>
+                    <ul>
+                        <li class="tooltip"><i class="fa-solid fa-address-card"></i> Calle del Arenal 3029, CP (34448), Pontevedra, País Vasco, España<span class="tooltiptext">Dirección</span></li>
+                        <br>
+                        <li class="tooltip"><i class="fa-solid fa-envelope"></i> marco.ferrer@example.com<span class="tooltiptext">Email</span></li>
+                        <br>
+                        <li class="tooltip"><i class="fa-solid fa-calendar-days"></i> 10 de Mayo de 1971<span class="tooltiptext">Fecha Nacimiento</span></li>
+                        <br>
+                        <li class="tooltip"><i class="fa-solid fa-phone"></i> 959-254-231<span class="tooltiptext">Teléfono</span></li>
+                        <br>
+                        <li class="tooltip"><i class="fa-solid fa-mobile"></i> 654-598-487<span class="tooltiptext">Celular</span></li>
+                        <br>
+                        <li class="tooltip"><i class="fa-solid fa-passport"></i> DNI 46890209-N<span class="tooltiptext">Documento</span></li>
+                    </ul>
+                </article>
+            </section>
+        </div>  
+        <div class="col_derecha">
+            <nav>
+                <ul>
+                    <li><a id="nav_estudios"><i class="fa-solid fa-graduation-cap fa-flip" style="--fa-animation-duration: 3s;"></i> Estudios Cursados</a></li>
+                    <li><a id="nav_experiencia"><i class="fa-solid fa-briefcase fa-flip" style="--fa-animation-duration: 3s;"></i> Experiencia Profesional</a></li>
+                    <li><a id="nav_habilidades"><i class="fa-solid fa-person-digging fa-flip" style="--fa-animation-duration: 3s;"></i>  Habilidades</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article id="info_estudios">
+                    <div id="div_estudios"><h1 id="tit_estudios"><i class="fa-solid fa-graduation-cap"></i>  Estudios Cursados</h1><br><br><br></div>
+                    <table>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Educación Terciaria</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Universidad Argentina de la Empresa (UADE)</td>
+                            <td>1990 - 1994</td>
+                        </tr>
+                        <tr>
+                            <td>Ciudad Autónoma de Buenos Aires, Argentina</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Título Obtenido: <strong>Licenciado en Informática</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Educación Secundaria</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>ENET Nº 3  de Avellaneda Dr. Salvador Debenedetti</td>
+                            <td>1982 - 1987</td>
+                        </tr>
+                        <tr>
+                            <td>Avellaneda, Buenos Aires, Argentina</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Título Obtenido: <strong>Técnico en Electrónica</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Educación Primaria</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Escuela Nº 17 D.E. 5 Juan Enrique Pestalozzi</td>
+                            <td>1975 - 1981</td>
+                        </tr>
+                        <tr>
+                            <td>Ciudad Autónoma de Buenos Aires, Argentina</td>
+                            <td></td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                    </table>
+                </article>
+    
+                <article id="info_experiencia" hidden>
+                    <div id="div_experiencia"><h1 id="tit_experiencia"><i class="fa-solid fa-briefcase"></i>  Experiencia Profesional</h1><br><br><br></div>
+                    <table>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Desicom S.R.L.</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Análisis, relevamiento, diseño, programación e implementación de Sistemas de Computación.</td>
+                            <td>1990 a la fecha</td>
+                        </tr>
+                        <tr>
+                            <td>Algunos proyectos desarrollados:
+                                <ul>
+                                    <li><strong>IMCO S.A.</strong> Sistema de gestión integral</li>
+                                    <li><strong>RITRAC S.A.</strong> Sistema de gestión integral</li>
+                                    <li><strong>SPINE DEVICES</strong> Sitio Web institucional y administración de chat</li>
+                                    <li><strong>FUERZA AEREA ARGENTINA</strong> Sistema de Mesa de Entradas (DGAF), Sistema de Administración y Gestión (LADE, CFA, DTA), Sistema de Gestión/Control/Ejecución presupuestaria (DGAF y organismos dependientes)</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Foxboro Argentina S.A.</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Dibujante técnico. Reparaciones electrónicas</td>
+                            <td>1989 - 1990</td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                        <tr>
+                            <th>Ingersoll Rand Argentina S.A.</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Tareas administrativas generales. Cadete.</td>
+                            <td>1987 - 1988</td>
+                        </tr>
+                        <tr><td></td><td></td></tr>
+                    </table>
+                </article>
+    
+                <article id="info_habilidades" hidden>
+                    <div id="div_habilidades"><h1 id="tit_habilidades"><i class="fa-solid fa-person-digging"></i>  Habilidades</h1><br><br><br></div>
+                    <table>
+                        <tr><td></td></tr>
+                        <tr>
+                            <th>Habilidades y Conocimientos</th>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>Manejo de Sistema Operativo Windows.</td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>Manejo completo del paquete Microsoft Office.</td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>Manejo de Base de Datos (Access, MySql, MS SQL Server).</td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>Idioma Inglés, hablado y escrito. (Cursado en I.E.S. en Lenguas Vivas “Juan Ramón Fernandez”)</td>
+                        </tr>
+                        <tr><td></td></tr>
+                        <tr>
+                            <td>Lenguajes de Programación (MS Visual Studio, .NET, Php, Html, Css, JavaScript, TypeScript)</td>
+                        </tr>
+                        <tr><td></td></tr>
+                    </table>
+                </article>
+            </section>
+        </div>  
+    </div>  
+      
+    <footer>
+        <a href="link_externo.html" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="link_externo.html" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="link_externo.html" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <p>Proyecto Final del curso de TICMAS Academy - Primeros pasos en desarrollo de Frontend - Powered by <a href="mailto:email@example.com?subject=Correo desde el CV de Marco Ferrer&body=Contactar al desarrollador por el siguiente motivo:">Aníbal Lema</a></p>
+    </footer>
+ 
+    <script src="js/funciones.js"></script>
+</body>
+</html>
